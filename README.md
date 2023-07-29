@@ -28,9 +28,9 @@
     * pesquisarContaDoCliente
     * listarContasAltaRenda
 
-* 2 - A classe SistemaBancario é responsável por registrar os bancos junto ao Bacen. Bacen é um Gateway que faz chamadas ao WebService do Bacen. É necessário testar a classe SistemaBancario unitariamente, logo precisamos de uma solução para isolar a classe Bacen. Sendo assim, deve ser realizado o seguinte:
-    * Criar 3 testes de sucesso do registro bancário, sendo um isolando a classe Bacen com fake, outro com stub e outro com mock
-    * Criar um teste de exceção usando mock, tendo como caso o cadastro do banco no Bacen tenha dado algum problema, a exceção BancoNaoCadastradoException do tipo RuntimeException deve ser retornada. Use o assertThrows para isso.
+* 2 - A classe RedeBancariaService é responsável por registrar os bancos junto ao Banco Central (BACEN). BancoCentralGateway é um Gateway que faz chamadas ao WebService do BACEN. É necessário testar a classe RedeBancariaService unitariamente, sendo assim é necessário isolar a classe. Dessa forma, deve ser realizado o seguinte:
+    * Criar 3 testes de sucesso do registro bancário, sendo um isolando a classe BancoCentralGateway com fake, com stub e com mock
+    * Criar um teste de exceção usando mock, tendo como caso o cadastro do banco no BACEN tenha dado algum problema, a exceção BancoNaoCadastradoException do tipo RuntimeException deve ser retornada. Use o assertThrows para isso.
 
 
 
