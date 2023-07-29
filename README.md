@@ -29,14 +29,14 @@
     * listarContasAltaRenda
 
 * 2 - A classe SistemaBancario é responsável por registrar os bancos junto ao Bacen. Bacen é um Gateway que faz chamadas ao WebService do Bacen. É necessário testar a classe SistemaBancario unitariamente, logo precisamos de uma solução para isolar a classe Bacen. Sendo assim, deve ser realizado o seguinte:
-    * Criar 3 teste de sucesso do registro bancário, sendo um isolando a classe Bacen com fake, stub e mock
+    * Criar 3 testes de sucesso do registro bancário, sendo um isolando a classe Bacen com fake, outro com stub e outro com mock
     * Criar um teste de exceção usando mock, tendo como caso o cadastro do banco no Bacen tenha dado algum problema, a exceção BancoNaoCadastradoException do tipo RuntimeException deve ser retornada. Use o assertThrows para isso.
 
 
 
 ### f) refatorar um código-fonte disponibilizado com objetivo de melhorá-lo sem que haja mudança na sua funcionalidade;
 
-* 1 - Refatorar o método pesquisarContaDoCliente para resolver os problemas de lentidão
+* 1 - Refatorar o método pesquisarContaDoCliente da classe BancoService para resolver os problemas de lentidão
 
 
 
